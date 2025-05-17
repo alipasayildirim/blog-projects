@@ -1,4 +1,4 @@
-# 📘 Blog Post Manager – React + Shadcn UI
+# 📘 Blog Post Manager – React + Shadcn UI + Tailwind CSS
 
 Bu proje, React ve Shadcn UI kullanılarak geliştirilmiş bir blog post yönetim uygulamasıdır. Kullanıcılar yeni post ekleyebilir, mevcut postları düzenleyebilir ve hepsini liste halinde görüntüleyebilir.
 

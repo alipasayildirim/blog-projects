@@ -1,12 +1,50 @@
-# React + Vite
+# 📘 Blog Post Manager – React + Shadcn UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React ve Shadcn UI kullanılarak geliştirilmiş bir blog post yönetim uygulamasıdır. Kullanıcılar yeni post ekleyebilir, mevcut postları düzenleyebilir ve hepsini liste halinde görüntüleyebilir.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Özellikler
 
-## Expanding the ESLint configuration
+- 📝 Blog post listeleme (title, description, image, author, date)
+- ➕ Yeni post ekleme (Dialog modal ile)
+- ✏️ Post düzenleme (Dialog modal ile)
+- ✅ Toast bildirimleri (başarı ve hata mesajları)
+- ❌ Boş alan kontrolü
+- 🎨 Shadcn UI & Tailwind CSS ile modern tasarım
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Proje Yapısı
+
+src/
+│
+├── components/
+│ ├── blog/
+│ │ ├── BlogList.jsx # Postları listeleyen ana bileşen
+│ │ ├── BlogItem.jsx # Tek bir post kartı
+│ │ ├── AddBlogItem.jsx # Post ekleme modal bileşeni
+│ │ └── EditBlogItem.jsx # Post düzenleme modal bileşeni
+│ └── ui/ # Shadcn UI bileşenleri (Button, Dialog, Card, etc.)
+│
+├── data/
+│ └── blogData.js # Başlangıç blog post verileri
+│
+├── App.jsx # Uygulamanın giriş noktası
+└── main.jsx # React DOM root
+
+
+## 📦 Kurulum
+
+```bash
+# 1. Projeyi klonla
+git clone https://github.com/kullaniciadi/blog-project.git
+
+# 2. Proje klasörüne gir
+cd blog-project
+
+# 3. Gerekli bağımlılıkları yükle
+npm install
+
+# 4. Uygulamayı başlat
+npm run dev
